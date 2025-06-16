@@ -35,7 +35,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link to="/" className="flex items-center space-x-2 text-xl font-bold">
-              <Brain className="h-8 w-8 text-blue-400" />
+              <img src="public/deepskim_logo.png" alt="Deepskim.AI" className="h-8 w-8" />
               <span>Deepskim.ai</span>
             </Link>
 
