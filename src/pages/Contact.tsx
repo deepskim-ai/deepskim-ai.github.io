@@ -33,14 +33,14 @@ const Contact: React.FC = () => {
     {
       name: 'GitHub',
       icon: <Github className="h-5 w-5" />,
-      url: 'https://github.com/deepskim',
-      handle: 'github.com/deepskim'
+      url: 'https://github.com/deepskim-ai',
+      handle: 'github.com/deepskim-ai'
     },
     {
       name: 'LinkedIn',
       icon: <Linkedin className="h-5 w-5" />,
-      url: 'https://linkedin.com/company/deepskim',
-      handle: 'linkedin.com/company/deepskim'
+      url: 'https://linkedin.com/company/deepskim-ai',
+      handle: 'linkedin.com/company/deepskim-ai'
     }
   ];
 
@@ -132,7 +132,7 @@ const Contact: React.FC = () => {
                   href="mailto:founders@deepskim.ai"
                   className="text-blue-400 hover:text-blue-300 font-semibold text-lg transition-colors duration-200"
                 >
-                  founders@deepskim.ai
+                  jun18shadow@gmail.com
                 </a>
               </div>
 
