@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
       name: 'LinkedIn',
       icon: <Linkedin className="h-5 w-5" />,
       url: 'https://linkedin.com/company/deepskim-ai',
-      handle: 'linkedin.com/company/deepskim-ai'
+      handle: 'linkedin.com/company/deepskim'
     }
   ];
 
