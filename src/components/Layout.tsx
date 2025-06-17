@@ -35,7 +35,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link to="/" className="flex items-center space-x-2 text-xl font-bold">
-              <img src="https://raw.githubusercontent.com/deepskim-ai/deepskim-ai.github.io/refs/heads/main/public/deepskim_logo.png?token=GHSAT0AAAAAADDNHBTLIKG6AOWLEFNFPCVI2CRRATQ" alt="Deepskim.AI" className="h-8 w-8" />
+              <img src="https://raw.githubusercontent.com/deepskim-ai/deepskim-ai.github.io/633f61eb77d8c50ae3e6c093daf11212298f5cd9/public/deepskim_logo.png?token=GHSAT0AAAAAADDNHBTLIKG6AOWLEFNFPCVI2CRRATQ" alt="Deepskim.AI" className="h-8 w-8" />
               <span>Deepskim.ai</span>
             </Link>
 
@@ -106,7 +106,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
-              <img src="https://raw.githubusercontent.com/deepskim-ai/deepskim-ai.github.io/refs/heads/main/public/deepskim_logo.png?token=GHSAT0AAAAAADDNHBTLIKG6AOWLEFNFPCVI2CRRATQ" alt="Deepskim.AI" className="h-8 w-8" />
+              <img src="https://raw.githubusercontent.com/deepskim-ai/deepskim-ai.github.io/633f61eb77d8c50ae3e6c093daf11212298f5cd9/public/deepskim_logo.png?token=GHSAT0AAAAAADDNHBTLIKG6AOWLEFNFPCVI2CRRATQ" alt="Deepskim.AI" className="h-8 w-8" />
               <span className="text-lg font-semibold">Deepskim.ai</span>
             </div>
             <div className="text-sm text-gray-400">
