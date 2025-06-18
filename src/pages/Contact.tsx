@@ -27,7 +27,7 @@ const Contact: React.FC = () => {
     {
       name: 'Twitter',
       icon: <Twitter className="h-5 w-5" />,
-      url: 'https://twitter.com/deepskim_ai',
+      url: 'https://x.com/deepskim_ai',
       handle: '@deepskim_ai'
     },
     {
@@ -129,10 +129,10 @@ const Contact: React.FC = () => {
                   For direct inquiries, partnerships, or urgent matters:
                 </p>
                 <a
-                  href="mailto:founders@deepskim.ai"
+                  href="mailto:deepskim.ai@gmail.com"
                   className="text-blue-400 hover:text-blue-300 font-semibold text-lg transition-colors duration-200"
                 >
-                  jun18shadow@gmail.com
+                  deepskim.ai@gmail.com
                 </a>
               </div>
 
