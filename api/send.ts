@@ -12,7 +12,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   try {
     const data = await resend.emails.send({
-      from: email,
+      from: 'Deepskim <deepskim.ai@gmail.com>',
       to: 'deepskim.ai@gmail.com',
       subject: `New message from ${name}`,
       reply_to: email,
