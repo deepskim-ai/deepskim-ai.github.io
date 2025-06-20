@@ -15,12 +15,24 @@ const Contact: React.FC = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({ name: '', email: '', message: '' });
+
+    const res = await fetch('/api/send.ts', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name,
+        email,
+        message,
+      }),
+    });
+
+    if (res.ok) {
+      alert('Email sent!');
+    } else {
+      alert('Something went wrong.');
+    }
   };
 
   const socialLinks = [
@@ -67,7 +79,7 @@ const Contact: React.FC = () => {
             {/* Contact Form */}
             <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700">
               <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
-              <form action="https://formspree.io/f/meoklzqd" method="POST" className="space-y-6"> {/* onSubmit={handleSubmit} */}
+              <form onSubmit={handleSubmit} className="space-y-6"> {/* action="https://formspree.io/f/meoklzqd" method="POST" */}
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                     Name
