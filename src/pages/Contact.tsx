@@ -8,12 +8,6 @@ const Contact: React.FC = () => {
     message: ''
   });
 
-  const data = {
-    name: formData.get('name'),
-    email: formData.get('email'),
-    message: formData.get('message'),
-  };
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
@@ -21,8 +15,18 @@ const Contact: React.FC = () => {
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      message: formData.get('message'),
+    };
 
     const res = await fetch('/api/send', {
       method: 'POST',
