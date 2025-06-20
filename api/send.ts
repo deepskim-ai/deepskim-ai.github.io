@@ -13,7 +13,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       from: email,
       to: 'deepskim.ai@gmail.com',
       subject: `Message from ${name}`,
-      reply_to: '',
+      reply_to: email,
       html: `<p>${message}</p>`,
     });
     res.status(200).json({ success: true });
