@@ -1,8 +1,8 @@
-const { Resend } = require('resend');
+import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-module.exports = async (req, res) => {
+export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ message: 'Method Not Allowed' });
   }
@@ -23,4 +23,4 @@ module.exports = async (req, res) => {
     console.error('Email send failed:', error);
     res.status(500).json({ error: 'Email send failed' });
   }
-};
+}
