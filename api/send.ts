@@ -10,10 +10,10 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
   try {
     await resend.emails.send({
-      from: 'Contact Us Page',
+      from: email,
       to: 'deepskim.ai@gmail.com',
       subject: `Message from ${name}`,
-      reply_to: email,
+      reply_to: '',
       html: `<p>${message}</p>`,
     });
     res.status(200).json({ success: true });
