@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
       message: formData.get('message'),
     };
 
-    const res = await fetch('/api/send.ts', {
+    const res = await fetch('/api/send', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),
