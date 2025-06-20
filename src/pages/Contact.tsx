@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
     if (res.ok) {
       alert('Email sent!');
     } else {
-      alert('Something went wrong.');
+      alert('Something is wrong. :(');
     }
   };
 
