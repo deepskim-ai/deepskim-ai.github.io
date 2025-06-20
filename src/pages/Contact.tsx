@@ -67,7 +67,7 @@ const Contact: React.FC = () => {
             {/* Contact Form */}
             <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700">
               <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form action="https://formspree.io/f/meoklzqd" method="POST" onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                     Name
