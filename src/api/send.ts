@@ -11,7 +11,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   try {
     await resend.emails.send({
       from: 'Contact Us Page',
-      to: 'management.rambln.ai@gmail.com',
+      to: 'deepskim.ai@gmail.com',
       subject: `Message from ${name}`,
       reply_to: email,
       html: `<p>${message}</p>`,
