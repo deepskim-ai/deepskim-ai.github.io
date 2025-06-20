@@ -1,9 +1,8 @@
-import { VercelRequest, VercelResponse } from '@vercel/node';
-import { Resend } from 'resend';
+const { Resend } = require('resend');
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export default async function handler(req: VercelRequest, res: VercelResponse) {
+module.exports = async (req, res) => {
   if (req.method !== 'POST') {
     return res.status(405).json({ message: 'Method Not Allowed' });
   }
@@ -24,4 +23,4 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     console.error('Email send failed:', error);
     res.status(500).json({ error: 'Email send failed' });
   }
-}
+};
