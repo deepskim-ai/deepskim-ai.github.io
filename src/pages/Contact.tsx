@@ -8,6 +8,12 @@ const Contact: React.FC = () => {
     message: ''
   });
 
+  const data = {
+    name: formData.get('name'),
+    email: formData.get('email'),
+    message: formData.get('message'),
+  };
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
@@ -21,11 +27,7 @@ const Contact: React.FC = () => {
     const res = await fetch('/api/send', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name,
-        email,
-        message,
-      }),
+      body: JSON.stringify(data),
     });
 
     if (res.ok) {
